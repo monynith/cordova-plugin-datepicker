@@ -71,7 +71,7 @@ public class DatePickerPlugin extends CordovaPlugin {
 		    
     // Retrieve Android theme
     JSONObject options = data.optJSONObject(0);
-    int theme = options.optInt("androidTheme", 1);
+    int theme = options.optInt("androidTheme", 5);
 
 		if (ACTION_TIME.equalsIgnoreCase(jsonDate.action)) {
 			runnable = runnableTimeDialog(datePickerPlugin, theme, currentCtx,
